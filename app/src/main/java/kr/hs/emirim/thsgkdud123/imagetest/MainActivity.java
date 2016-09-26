@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(new MyImage(this));
+        setContentView(R.layout.activity_main);
         //또는 setContentView(new MyImage(getApplicationCantext()));
     }
 //
