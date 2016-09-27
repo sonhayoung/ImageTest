@@ -14,31 +14,43 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:gravity="center"
         >
 
         <Button
             android:id="@+id/but_rotate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/but_rotate_label"/>
+            android:text="회전"
+            android:onClick="transformImage"/>
         <Button
             android:id="@+id/but_translate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/but_translate_label"/>
+            android:text="이동"
+            android:onClick="transformImage"/>
         <Button
             android:id="@+id/but_scale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/but_scale_label"/>
+            android:text="확대"
+            android:onClick="transformImage"/>
         <Button
             android:id="@+id/but_skew"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/but_skew_label"/>
+            android:text="비틀기"
+            android:onClick="transformImage"/>
 
     </LinearLayout>
-    <kr.hs.emirim.thsgkdud123.imagetest.MyImage
+    <LinearLayout
+        android:id="@+id/linear1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+    <!--<kr.hs.emirim.thsgkdud123.imagetest.MyImage
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
 </LinearLayout>
